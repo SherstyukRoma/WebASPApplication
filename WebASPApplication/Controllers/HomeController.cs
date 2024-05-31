@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
-using WebASPApplication.Models;
+using WebASPApplication.ViewModels;
 
 namespace WebASPApplication.Controllers
 {
@@ -13,15 +13,12 @@ namespace WebASPApplication.Controllers
             _logger = logger;
         }
 
+        // дефолтный маршрут
         public IActionResult Index()
         {
             return View();
         }
 
-        public IActionResult Privacy()
-        {
-            return View();
-        }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()

@@ -1,0 +1,36 @@
+﻿@{
+    ViewData["Title"] = "About Page";
+}
+
+<div class="text-center row">
+    
+    <div class="col-md-6">
+        <h1 class="display-4"> Написять Нам</h1>
+        <p>Тут Вы написять Нам и мы всегда отреагируем на ваш сигнал</p>
+        <form method="post" asp-controller="About" asp-action="GetGuestMessage">
+            <div class="mb-3">
+                <label for="exampleInputEmail" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail" aria-describedby="emailHelp" name="Email">
+                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputFio" class="form-label">FIO</label>
+                <input type="text" class="form-control" id="exampleInputFio" name="Fio">
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputPhone" class="form-label">Phone</label>
+                <input type="text" class="form-control" id="exampleInputPhone" name="Phone">
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputSubject" class="form-label">Subject</label>
+                <input type="text" class="form-control" id="exampleInputSubject" name="Subject">
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputMessage" class="form-label">Message</label>
+                <textarea class="form-control" id="exampleInputMessage" name="Message"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Написать нам</button>
+        </form>
+    </div>    
+</div>

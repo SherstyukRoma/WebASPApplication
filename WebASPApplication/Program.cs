@@ -4,6 +4,7 @@ namespace WebASPApplication
     {
         public static void Main(string[] args)
         {
+            // создание хост IHost - в рамках которго создается и запускается приложение
             var builder = WebApplication.CreateBuilder(args);
 
             // Add services to the container.
@@ -34,3 +35,6 @@ namespace WebASPApplication
         }
     }
 }
+
+// 1. router
+// 2. middleware
