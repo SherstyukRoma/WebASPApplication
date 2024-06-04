@@ -1,0 +1,7 @@
+﻿<ul class="nk-social-links-2">
+    @foreach(var oneSocialLink in Model) {
+        <li><a class="nk-social-rss" href="@oneSocialLink.Key">
+                @Html.Raw(@oneSocialLink.Value)
+        </a></li>
+    }
+</ul>
